@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include xpert_hr *.css
+recursive-include xpert_hr *.csv
+recursive-include xpert_hr *.html
+recursive-include xpert_hr *.ico
+recursive-include xpert_hr *.js
+recursive-include xpert_hr *.json
+recursive-include xpert_hr *.md
+recursive-include xpert_hr *.png
+recursive-include xpert_hr *.py
+recursive-include xpert_hr *.svg
+recursive-include xpert_hr *.txt
+recursive-exclude xpert_hr *.pyc
