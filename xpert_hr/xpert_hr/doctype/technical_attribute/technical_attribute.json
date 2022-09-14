@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:attribute_name",
+ "creation": "2022-09-08 11:30:40.975784",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attribute_name",
+  "has_predefined_values",
+  "attribute_values"
+ ],
+ "fields": [
+  {
+   "fieldname": "attribute_name",
+   "fieldtype": "Data",
+   "label": "Attribute Name",
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:(doc.has_predefined_values)",
+   "fieldname": "attribute_values",
+   "fieldtype": "Table",
+   "label": "Attribute Values",
+   "options": "Technical Attribute Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_predefined_values",
+   "fieldtype": "Check",
+   "label": "Has Pre-defined values"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-08 11:34:14.204462",
+ "modified_by": "Administrator",
+ "module": "XPERT HR",
+ "name": "Technical Attribute",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
